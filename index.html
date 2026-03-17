@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Championnat de France de Pizza 2025 - Jury</title>
+    <title>Championnat de France de Pizza Finale 2026 - Jury</title>
     <style>
         * {
             margin: 0;
@@ -16,6 +16,12 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox*/
         }
 
         .header {
@@ -111,6 +117,9 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        .btn-preparation {
+            background: linear-gradient(135deg, #e2fd36 0%, #dec33d 100%);
+        }
         .btn-fabrication {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
@@ -124,7 +133,8 @@
         }
 
         .btn-res {
-            background: linear-gradient(135deg, #e2fd36 0%, #dec33d 100%);
+            display: none;
+            background: linear-gradient(135deg, #07f60f 0%, #57c33c 100%);
         }
         @media (max-width: 768px) {
             .header h1 {
@@ -139,193 +149,40 @@
 </head>
 <body>
     <div class="header">
-        <h1>🍕 Championnat de France de Pizza 2025 🍕</h1>
+        <h1>🍕 Championnat de France de Pizza Finale 2026 - Jury 🍕</h1>
         <p>Espace Jury</p>
     </div>
 
     <div class="container">
         <div class="cards-grid">
 
-            <div class="card">
+            <div class="card" id="classique">
                 <div class="card-header">
-                    <h2 class="card-title">Montpellier</h2>
-                    <p class="card-date">20 Octobre 2025</p>
+                    <h2 class="card-title">Classique</h2>
                 </div>
                 <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/jqzi7st1GLHJfjjx9" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/iY6U22Dmngw1dB7MA" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/ZXqqDqjPL7S1Xqq49" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Montpellier - 20_10_25 - Résultats.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
+                    <a href="https://forms.gle/DthBbUWPrv4wVm4D9" target="_blank" rel="noopener noreferrer" class="jury-button btn-preparation">Juge de Préparation</a>
+                    <a href="https://forms.gle/cHJh1XDz67h2JLs9A" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
+                    <a href="https://forms.gle/VSt4skB6WDMT2qKW6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
+                    <a href="https://forms.gle/oJFehkVpJ8DANth1A" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
+                    <a href="https://docs.google.com/spreadsheets/d/17yWEOa8nz223Uon8rM5BZWGXHiCANTZhAxX5LATLAJc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Marseille</h2>
-                    <p class="card-date">03 Novembre 2025</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/re1gNZbUqBvcvXoT8" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/ee8gDT2oFXqewpR86" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/8Ta1SoEZfnyoWCDDA" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Marseille.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Dijon (Pizza Amateur)</h2>
-                    <p class="card-date">9 Novembre 2025</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/N25nWFC6AWe4wptC7" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/uDrobHr5rdrEB5rBA" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a> -->
-                    <a href="./Dijon.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Metz</h2>
-                    <p class="card-date">10 Novembre 2025</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/2ThoSdbLPz8zoeZK7" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/vrBG2rtQJGmcx6LZ9" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/c9CbJ4WDj5rwKwsbA" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Metz.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Bordeaux Lac</h2>
-                    <p class="card-date">01 Décembre 2025</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/k2hggyqdaBM1rXko6" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/d83EqcXckvzHxXnR6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/zjPTKzzibKk9GiUJ7" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Bordeaux.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Annecy</h2>
-                    <p class="card-date">19 Janvier 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/QS7TT6mHJZPKbAmt5" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/YLEEGMonGV4d9ZXM8" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/UWsFk7pByNn9nMEe7" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Annecy.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Championnat Napolitaine</h2>
-                    <p class="card-date">26 Janvier 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/QWLZKCXgJbBPs7Lo8" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/zqyZYe29hAqKVyZj7" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a> -->
-                    <a href="./Napolitaine.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Championnat Contemporaine</h2>
-                    <p class="card-date">26 Janvier 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/86rQ79eqrwV9rUWr9" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/Kk89ULC7Fq9vEpC87" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a> -->
-                    <a href="./Contemporaine.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Etape SMAHRT Toulouse</h2>
-                    <p class="card-date">26 Janvier 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/zFiHMEm5YxVH8DKq7" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/FAj5bPN9d2TEZm3y7" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/ZmpBvj5BGXMgKgT66" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Toulouse.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Vitry</h2>
-                    <p class="card-date">02 Février 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/SNAQTCjVNAuNxU3W7" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/6SRVc7yUGTNP5LrYA" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/sxfFwyGFxTf8qZat7" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
-                    <a href="./404.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a> -->
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Lomme</h2>
-                    <p class="card-date">09 Février 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLScBz0EuvNbYwd0jnPMxd9IBdvPdMVlxnJH1lnqNHj4QEET-Zg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-sTpuj8zeecebA7LsAn5YmRKQFphEbSPhx2FyaALhSu4w0Q/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFJSuIQf7wxjRX4DumYYdK9E23w5qlV0JMVAlEYZSqKErDYg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./Lomme.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Clermont Ferrand</h2>
-                    <p class="card-date">23 Février 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <!-- <a href="https://forms.gle/Q4nH3koiv4ZpK28XA" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/GuueKUp4XzkNmxKd8" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/faU6VGkaUrV4hACK8" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a> -->
-                    <a href="./CF.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Nice</h2>
-                    <p class="card-date">02 Mars 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <a href="https://forms.gle/3dJHtxn1ZwB5Es4z8" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/LVm5W2nzsRXN5JbL6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/kwD6Am6arG9bXreq5" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
-                    <a href="./Nice.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Rennes</h2>
-                    <p class="card-date">02 Mars 2026</p>
-                </div>
-                <div class="buttons-container">
-                    <a href="https://forms.gle/J36MC3gcabDzH9G76" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/yeFiR2PpvhRuDeV69" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/y8NsWfkLGV2Rciev8" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
-                    <a href="./Rennes.pdf" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
-                </div>
-            </div>
-
-        </div>
+        </div> 
     </div>
+    <script>
+        let clickCount = 0;
+        const card = document.querySelector('#classique');
+        const resultsButton = document.querySelector('.btn-res');
+
+        resultsButton.style.display = 'none';
+
+        card.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 10) {
+                resultsButton.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
