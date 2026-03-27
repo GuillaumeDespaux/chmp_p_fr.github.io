@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Championnat de France de Pizza Finale 2026 - Jury</title>
+    <script src="./script.js"></script>
     <style>
         * {
             margin: 0;
@@ -139,6 +140,9 @@
         .btn-acceuil{
             background: linear-gradient(135deg, #ffffff 0%, #333 100%);
         }
+        .btn-presentateur{
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+        }
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -175,6 +179,7 @@
                     <a href="https://forms.gle/cHJh1XDz67h2JLs9A" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
                     <a href="https://forms.gle/VSt4skB6WDMT2qKW6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
                     <a href="https://forms.gle/oJFehkVpJ8DANth1A" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
+                    <div class="jury-button btn-presentateur" onclick="loadParticipants()">Présentateur</div>
                     <a href="https://docs.google.com/spreadsheets/d/17yWEOa8nz223Uon8rM5BZWGXHiCANTZhAxX5LATLAJc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
                 </div>
             </div>
