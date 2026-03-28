@@ -2,9 +2,33 @@
 let participantsData = [];
 let currentIndex = 0;
 
-async function loadParticipants() {
+async function loadParticipantsClassique() {
   try {
-    const filename = 'participants.json';
+    const filename = 'participants-classique.json';
+    console.log('Attempting to fetch:', filename);
+    
+    const response = await fetch(filename);
+    console.log('Response status:', response.status);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    participantsData = await response.json();
+    console.log('Participants loaded:', participantsData.length);
+    console.log('First participant:', participantsData[0]);
+    
+    // Display modal with participants
+    displayParticipantsModal();
+  } catch (error) {
+    console.error('Error loading JSON:', error);
+    alert('Erreur lors du chargement des données: ' + error.message + '\n\nVérifiez la console du navigateur pour plus de détails.');
+  }
+}
+
+async function loadParticipantsDessert() {
+  try {
+    const filename = 'participants-dessert.json';
     console.log('Attempting to fetch:', filename);
     
     const response = await fetch(filename);
@@ -57,9 +81,6 @@ function displayParticipantsModal() {
     content.innerHTML = `
       <div style="margin-bottom:20px">
         <h2 style="color:#333;margin-bottom:10px">Participant ${currentIndex + 1}/${participantsData.length}</h2>
-        <p style="color:#999;font-size:0.9rem;margin-bottom:20px">
-          ${formatValue(participant['Nom :'])} ${formatValue(participant['Prénom :'])}
-        </p>
         <div style="max-height:400px;overflow-y:auto;border:1px solid #e0e0e0;padding:15px;border-radius:8px">
           ${participantInfo}
         </div>
@@ -109,9 +130,6 @@ function updateParticipantDisplay(content) {
   content.innerHTML = `
     <div style="margin-bottom:20px">
       <h2 style="color:#333;margin-bottom:10px">Participant ${currentIndex + 1}/${participantsData.length}</h2>
-      <p style="color:#999;font-size:0.9rem;margin-bottom:20px">
-        ${formatValue(participant['Nom :'])} ${formatValue(participant['Prénom :'])}
-      </p>
       <div style="max-height:400px;overflow-y:auto;border:1px solid #e0e0e0;padding:15px;border-radius:8px">
         ${participantInfo}
       </div>
