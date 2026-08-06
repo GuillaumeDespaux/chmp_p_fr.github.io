@@ -156,10 +156,11 @@
             }
         }
     </style>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="header">
-        <h1>🍕 Championnat de France de Pizza Finale 2026 - Jury 🍕</h1>
+        <h1>🍕 Championnat de France de Pizza 2026-2027 - Jury 🍕</h1>
         <p>Espace Jury</p>
     </div>
 
@@ -173,60 +174,28 @@
                 <a href="https://docs.google.com/spreadsheets/d/1xTgN1VEdUiQoYJMzStI6hK22Pi0jvKCJhqtHnV44sfk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="jury-button btn-suivi" id="accueil-res">Suivi des participants</a>
             </div>
         </div>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title" id="classique">Classique</h2>
-                </div>
-                <div class="buttons-container">
-                    <a href="https://forms.gle/DthBbUWPrv4wVm4D9" target="_blank" rel="noopener noreferrer" class="jury-button btn-preparation">Juge de Préparation</a>
-                    <a href="https://forms.gle/cHJh1XDz67h2JLs9A" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/VSt4skB6WDMT2qKW6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/oJFehkVpJ8DANth1A" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
-                    <div class="jury-button btn-presentateur" onclick="loadParticipantsClassique()">Présentateur</div>
-                    <a href="https://docs.google.com/spreadsheets/d/17yWEOa8nz223Uon8rM5BZWGXHiCANTZhAxX5LATLAJc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="jury-button btn-res" id="classique-res">Résultats</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title" id="dessert">Dessert</h2>
-                </div>
-                <div class="buttons-container">
-                    <a href="https://forms.gle/Zz8XAEEkiFbQvU9m6" target="_blank" rel="noopener noreferrer" class="jury-button btn-preparation">Juge de Préparation</a>
-                    <a href="https://forms.gle/1tQzTcYRhAkq9NKH9" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-                    <a href="https://forms.gle/HGb5YiqqGnpqqhdw6" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
-                    <a href="https://forms.gle/uo4roa5mGJMPHX5CA" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef Pâtissier</a>
-                    <div class="jury-button btn-presentateur" onclick="loadParticipantsDessert()">Présentateur</div>
-                    <a href="" target="_blank" rel="noopener noreferrer" class="jury-button btn-res" id="dessert-res">Résultats</a>
-                </div>
-            </div>
-        </div> 
-        </div> 
+        
+    </div>
     <script>
-        let clickCount = 0;
-        const cardClassique = document.querySelector('#classique');
-        const cardDessert = document.querySelector('#dessert');
-        const resultsButtonC = document.querySelector('#classique-res');
-        const resultsButtonD = document.querySelector('#dessert-res');
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof etapesAndLinks === 'function') etapesAndLinks();
 
-        resultsButtonC.style.display = 'none';
-        resultsButtonD.style.display = 'none';
+            let clickCount = 0;
+            const card = document.querySelector('#classique');
+            const resultsButton = document.querySelector('.btn-res');
 
-        cardClassique.addEventListener('click', function() {
-            clickCount++;
-            if (clickCount === 10) {
-                resultsButtonC.style.display = 'block';
-                clickCount = 0;
-            }
-        });
+            if (resultsButton) resultsButton.style.display = 'none';
 
-        cardDessert.addEventListener('click', function() {
-            clickCount++;
-            if (clickCount === 10) {
-                resultsButtonD.style.display = 'block';
-                clickCount = 0;
+            if (card) {
+                card.addEventListener('click', function() {
+                    clickCount++;
+                    if (clickCount === 10 && resultsButton) {
+                        resultsButton.style.display = 'block';
+                    }
+                });
             }
         });
     </script>
+    
 </body>
 </html>
