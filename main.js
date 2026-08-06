@@ -1,24 +1,105 @@
 const ETAPES = [
-    { "town": "Paris", "date": "10/10/2026", 
+    { "town": "Marseille", "date": "12/10/2026", 
         "links": {
-        "jury-preparation": "https://forms.gle/DthBbUWPrv4wVm4D9",
-        "jury-fabrication": "https://forms.gle/cHJh1XDz67h2JLs9A",
-        "jury-pizzaiolo": "https://forms.gle/VSt4skB6WDMT2qKW6",
-        "jury-chef": "https://forms.gle/oJFehkVpJ8DANth1A",
-        "results": "https://docs.google.com/spreadsheets/d/17yWEOa8nz223Uon8rM5BZWGXHiCANTZhAxX5LATLAJc/edit?usp=sharing"
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
         }
-    }
+    },
+{ "town": "Clermont-Ferrand", "date": "12/10/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Lyon", "date": "19/10/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Toulouse", "date": "9/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Strasbourg", "date": "16/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Nantes", "date": "23/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Nice", "date": "23/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Lille", "date": "30/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+    { "town": "Bordeaux", "date": "30/11/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },    
+    { "town": "Paris", "date": "7/12/2026", 
+        "links": {
+        "jury-preparation": "",
+        "jury-fabrication": "",
+        "jury-pizzaiolo": "",
+        "jury-chef": "",
+        "results": ""
+        }
+    },
+
 ];
 
 function etapesAndLinks() {
-    const container = document.querySelector('.container');
+    const container = document.querySelector('.cards-grid');
     if (!container) return;
 
     ETAPES.forEach((element, idx) => {
         console.log('element', element);
         const titleId = `etape-${idx + 1}`;
         const html = `
-<div class="cards-grid">
     <div class="card">
         <div class="card-header">
             <h2 class="card-title" id="${titleId}">Classique - ${element.town}</h2>
@@ -31,8 +112,7 @@ function etapesAndLinks() {
             <a href="${element.links['jury-chef']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
             <a href="${element.links['results']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
         </div>
-    </div>
-</div>`;
+    </div>`;
 
         container.insertAdjacentHTML('beforeend', html);
     });

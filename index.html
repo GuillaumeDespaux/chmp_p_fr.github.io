@@ -174,28 +174,33 @@
                 <a href="https://docs.google.com/spreadsheets/d/1xTgN1VEdUiQoYJMzStI6hK22Pi0jvKCJhqtHnV44sfk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="jury-button btn-suivi" id="accueil-res">Suivi des participants</a>
             </div>
         </div>
+        <div class="cards-grid">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (typeof etapesAndLinks === 'function') etapesAndLinks();
+
+                    // Attach a per-card click counter that reveals that card's results button after 10 clicks
+                    const cards = document.querySelectorAll('.cards-grid .card');
+                    cards.forEach(card => {
+                        let clickCount = 0;
+                        const resultsButton = card.querySelector('.btn-res');
+                        if (resultsButton) resultsButton.style.display = 'none';
+
+                        card.addEventListener('click', function(e) {
+                            // ignore clicks on links so they don't count
+                            if (e.target.closest('a')) return;
+                            clickCount++;
+                            if (clickCount === 10 && resultsButton) {
+                                resultsButton.style.display = 'block';
+                            }
+                        });
+                    });
+                });
+            </script>
+        </div>
+        </div>
         
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof etapesAndLinks === 'function') etapesAndLinks();
-
-            let clickCount = 0;
-            const card = document.querySelector('#classique');
-            const resultsButton = document.querySelector('.btn-res');
-
-            if (resultsButton) resultsButton.style.display = 'none';
-
-            if (card) {
-                card.addEventListener('click', function() {
-                    clickCount++;
-                    if (clickCount === 10 && resultsButton) {
-                        resultsButton.style.display = 'block';
-                    }
-                });
-            }
-        });
-    </script>
     
 </body>
 </html>
