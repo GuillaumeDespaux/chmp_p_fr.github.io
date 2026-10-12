@@ -4,7 +4,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/cbiH9bcetVotzxkt9",
         "jury-pizzaiolo": "https://forms.gle/cZVrN62NJjUPayEH6",
         "jury-chef": "https://forms.gle/bLtRf6MoxDGPPpm36",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/Marseille.pdf",
         "results": "https://docs.google.com/spreadsheets/d/1WVZte046yj-TulO12JzT5HBxV8XTMOdRe0yx2ZSvQzg/edit?usp=sharing"
         }
     },
