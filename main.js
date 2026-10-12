@@ -13,7 +13,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/wQSGZPqhCMDUT7X77",
         "jury-pizzaiolo": "https://forms.gle/SoqNvzTSAWTVohUi7",
         "jury-chef": "https://forms.gle/2MvevWcvsS913FxY8",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/CF.pdf",
         "results": "https://docs.google.com/spreadsheets/d/1WVZte046yj-TulO12JzT5HBxV8XTMOdRe0yx2ZSvQzg/edit?usp=sharing"
         }
     },
