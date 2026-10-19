@@ -22,7 +22,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/CnHdiJTafpdrsk158",
         "jury-pizzaiolo": "https://forms.gle/4EAfmdcB2moKXJN58",
         "jury-chef": "https://forms.gle/sguhe2Dj5xUh5R129",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/Lyon.pdf",
         "results": "https://docs.google.com/spreadsheets/d/1WVZte046yj-TulO12JzT5HBxV8XTMOdRe0yx2ZSvQzg/edit?usp=sharing"
         }
     },
