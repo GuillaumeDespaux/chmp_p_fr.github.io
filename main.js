@@ -23,7 +23,7 @@ const ETAPES = [
         "jury-pizzaiolo": "https://forms.gle/4EAfmdcB2moKXJN58",
         "jury-chef": "https://forms.gle/sguhe2Dj5xUh5R129",
         "pdf": "./res/2026/Lyon.pdf",
-        "results": "https://docs.google.com/spreadsheets/d/1WVZte046yj-TulO12JzT5HBxV8XTMOdRe0yx2ZSvQzg/edit?usp=sharing"
+        "results": "https://docs.google.com/spreadsheets/d/1LjA0STuLsu0JSbG5AVGajPtGTWN3BpW4GkWnFHqnr1M/edit?usp=sharing"
         }
     },
     { "town": "Toulouse", "date": "9/11/2026", 
