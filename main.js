@@ -14,7 +14,7 @@ const ETAPES = [
         "jury-pizzaiolo": "https://forms.gle/SoqNvzTSAWTVohUi7",
         "jury-chef": "https://forms.gle/2MvevWcvsS913FxY8",
         "pdf": "./res/2026/CF.pdf",
-        "results": "https://docs.google.com/spreadsheets/d/1WVZte046yj-TulO12JzT5HBxV8XTMOdRe0yx2ZSvQzg/edit?usp=sharing"
+        "results": "https://docs.google.com/spreadsheets/d/1QYF0oOR4F5cyzF5U-TZtpvyRltwuJDv51XkWjbrQdJs/edit?usp=sharing"
         }
     },
     { "town": "Lyon", "date": "19/10/2026", 

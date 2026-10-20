@@ -183,21 +183,22 @@
                 document.addEventListener('DOMContentLoaded', function() {
                     if (typeof etapesAndLinks === 'function') etapesAndLinks();
 
-                    // Attach a per-card click counter that reveals that card's results button after 10 clicks
-                    const cards = document.querySelectorAll('.cards-grid .card');
-                    cards.forEach(card => {
-                        let clickCount = 0;
-                        const resultsButton = card.querySelector('.btn-res');
-                        if (resultsButton) resultsButton.style.display = 'none';
+                    // Use event delegation so each dynamically generated card has its own counter.
+                    const cardsGrid = document.querySelector('.cards-grid');
+                    const clickCounts = new WeakMap();
 
-                        card.addEventListener('click', function(e) {
-                            // ignore clicks on links so they don't count
-                            if (e.target.closest('a')) return;
-                            clickCount++;
-                            if (clickCount === 10 && resultsButton) {
-                                resultsButton.style.display = 'block';
-                            }
-                        });
+                    cardsGrid.addEventListener('click', function(e) {
+                        const card = e.target.closest('.card');
+                        if (!card || !cardsGrid.contains(card) || e.target.closest('a')) return;
+
+                        const resultsButton = card.querySelector('.btn-res');
+                        if (!resultsButton) return;
+
+                        const clickCount = (clickCounts.get(card) || 0) + 1;
+                        clickCounts.set(card, clickCount);
+                        if (clickCount >= 10) {
+                            resultsButton.style.display = 'block';
+                        }
                     });
                 });
             </script>
