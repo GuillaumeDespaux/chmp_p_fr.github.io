@@ -35,6 +35,15 @@ const ETAPES = [
         "results": ""
         }
     },
+    { "town": "Amateur", "date": "11/11/2026", 
+        "links": {
+        "jury-fabrication": "https://forms.gle/2fkVKKoo6ygz1Vvx5",
+        "jury-pizzaiolo": "https://forms.gle/n96Nz4zcND5Zkidp9",
+        "jury-chef": "https://forms.gle/tiktwDDBdbhthFSX7",
+        "pdf": "./res/2026/404.pdf",
+        "results": "https://docs.google.com/spreadsheets/d/1RKBduKOiSm79kqUWc-ZLY9h4GPr4sYXZHPK6VB_cZ7U/edit?usp=sharing"
+        }
+    },
     { "town": "Metz", "date": "16/11/2026", 
         "links": {
         "jury-fabrication": "https://forms.gle/CYh4uuon72aLYA3T6",
@@ -107,7 +116,7 @@ function etapesAndLinks() {
         </div>
         <div class="buttons-container">
             <a href="${element.links['jury-fabrication']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-            <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
+            <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Dégustation</a>
             <a href="${element.links['jury-chef']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
             <a href="${element.links['pdf']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pdf">Résultats PDF</a>
             <a href="${element.links['results']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
@@ -118,3 +127,4 @@ function etapesAndLinks() {
     });
 }
 
+// <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
