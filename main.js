@@ -32,7 +32,7 @@ const ETAPES = [
         "jury-pizzaiolo": "https://forms.gle/f3qo2sRMxvLbw5Fm9",
         "jury-chef": "https://forms.gle/GQ2AWW3yJx4HTAGV8",
         "pdf": "./res/2026/404.pdf",
-        "results": ""
+        "results": "https://docs.google.com/spreadsheets/d/1z5cLqPUIMhBroKW8yUb7h0ZVXj7Rmpt1HwL88o2xGQY/edit?usp=sharing"
         }
     },
     { "town": "Amateur", "date": "11/11/2026", 
