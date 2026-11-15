@@ -50,7 +50,7 @@ const ETAPES = [
         "jury-pizzaiolo": "https://forms.gle/ojs8DK9qmcrZzMjw6",
         "jury-chef": "https://forms.gle/op3SAJtEMTAjknyB6",
         "pdf": "./res/2026/404.pdf",
-        "results": ""
+        "results": "https://docs.google.com/spreadsheets/d/1udbK82v4JBvXE9MtUGvgKGdpWbt6-ej5u8BSktrp_48/edit?usp=sharing"
         }
     },
     { "town": "Nantes", "date": "23/11/2026", 
