@@ -49,7 +49,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/CYh4uuon72aLYA3T6",
         "jury-pizzaiolo": "https://forms.gle/ojs8DK9qmcrZzMjw6",
         "jury-chef": "https://forms.gle/op3SAJtEMTAjknyB6",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/Metz.png",
         "results": "https://docs.google.com/spreadsheets/d/1udbK82v4JBvXE9MtUGvgKGdpWbt6-ej5u8BSktrp_48/edit?usp=sharing"
         }
     },
