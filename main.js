@@ -58,7 +58,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/XzADx54NyTLNmTnn9",
         "jury-pizzaiolo": "https://forms.gle/gfR8RnWw447oQGBXA",
         "jury-chef": "https://forms.gle/xRNNLiVPssstY3EY6",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/Nantes.pdf",
         "results": ""
         }
     },
@@ -67,7 +67,7 @@ const ETAPES = [
         "jury-fabrication": "https://forms.gle/TpzFE6Dc11Yy7zvF8",
         "jury-pizzaiolo": "https://forms.gle/CHmhDKsgQcfFRAFXA",
         "jury-chef": "https://forms.gle/W8Vt8EbqaJPpGYNQA",
-        "pdf": "./res/2026/404.pdf",
+        "pdf": "./res/2026/Nice.pdf",
         "results": ""
         }
     },
@@ -116,7 +116,7 @@ function etapesAndLinks() {
         </div>
         <div class="buttons-container">
             <a href="${element.links['jury-fabrication']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-fabrication">Juge de Fabrication</a>
-            <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Dégustation</a>
+            <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
             <a href="${element.links['jury-chef']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-chef">Juge Chef de Cuisine</a>
             <a href="${element.links['pdf']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pdf">Résultats PDF</a>
             <a href="${element.links['results']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-res">Résultats</a>
@@ -126,5 +126,3 @@ function etapesAndLinks() {
         container.insertAdjacentHTML('beforeend', html);
     });
 }
-
-// <a href="${element.links['jury-pizzaiolo']}" target="_blank" rel="noopener noreferrer" class="jury-button btn-pizzaiolo">Juge Pizzaïolo</a>
